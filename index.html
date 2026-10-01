@@ -6,11 +6,170 @@
     <title>Cannes Film Festival</title>
 
     <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- TIPOGRAFIA TÍTULO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alien+Block&family=Imbue:opsz,wght@10..100,100..900&display=swap" rel="stylesheet">
+
+    <!-- TIPOGRAFIA SUBTITULO  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alien+Block&family=Homemade+Apple&family=Imbue:opsz,wght@10..100,100..900&display=swap" rel="stylesheet">
+
+    <!-- TIPOGRAFIA CUERPO  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alien+Block&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Homemade+Apple&family=Imbue:opsz,wght@10..100,100..900&display=swap" rel="stylesheet">
+
+    <!-- ICONOS FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <div class="menu">
+
+        <h1 class="logo">Galerry-logo</h1>
+
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="index.html">FESTIVAL</a></li>
+                <li><a href="explore.html">EXPLORE</a></li>
+                <li><a href="tickets.html">TICKETS</a></li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="sideMenu" class="side-menu">
+
+        <label class="hamb" for="sideMenu">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <nav class="nav-mobile">
+            <ul>
+                <li><a href="index.html">FESTIVAL</a></li>
+                <li><a href="explore.html">EXPLORE</a></li>
+                <li><a href="tickets.html">TICKETS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <header class="hero-home">
+
+        <img src="Gallery/home1.jpeg" alt="" class="img-hero">
+
+    </header>
+
+    <main>
+        <section>
+            <h1 class="titulo-hero">CANNES FILM FESTIVAL</h1>
+
+            <p class="texto">
+            Since 1946
+            </p>
+        </section>
+
+    <!-- Historia de Cannes  -->
+     
+    <div class="room-block">
+                <div class="room-top">
+                    <p>THE STORY OF CANNES</p>
+                </div>
+
+                <div class="room-content">
+                    <div class="room-design">
+                        <img src="Gallery/home2.jpeg" alt="">
+                    </div>
+
+                    <div class="room-text">
+                        <p>
+                            Founded in 1946, the Cannes Film Festival was created as a celebration of international cinema and a meeting point for filmmakers from around the world. Over the decades, Cannes has become a landmark event in the film industry, bringing together directors, actors, artists and audiences to discover new stories and celebrate the art of filmmaking.
+
+                            From groundbreaking films and emerging voices to legendary premieres and unforgettable moments on the red carpet, the festival has become part of cinema history. Every year, Cannes continues this tradition while giving a platform to new perspectives and shaping the future of cinema.
+                        </p>
+                    </div>
+                </div>
+
+
+    <div class="boton">
+        <h3>Get tickets</h3>
+    </div>
+
+
+    <!-- Galeria peliculas seleccionadas -->
+
+        <section class="gallery">
+
+            <div class="column">
+                <img src="Gallery/selected_films1.jpeg" alt="">
+                <img src="Gallery/selected_films2.jpeg" alt="">
+                <img src="Gallery/selected_films3.jpeg" alt="">
+            </div>
+
+            <div class="column">
+                <img src="Gallery/selected_films4.jpeg" alt="">
+                <img src="Gallery/selected_films5.jpeg" alt="">
+                <img src="Gallery/selected_films6.jpeg" alt="">
+
+            </div>
+
+        </section>
+
+
     
+    <!-- FOOTER -->
+  <footer>
+        <div class="footersection">
+            <ul>
+                <li>
+                    <a href="tickets.html">GET TICKETS</a>
+                </li>
+            </ul>
+        </div>
 
+        <div class="footersection">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#" class="footerlinks"><i class="fa-solid fa-location-dot"></i><p class="pfooter">Palais des Festivals et des Congres (Boulevard de la Croisette,06400 Cannes, France)</p></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footerlinks"><i class="fa-solid fa-envelope"></i><p class="pfooter">festival@festival-cannes.fr</p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="footersection">
+            <p class="pfooter">2026 Cannes Film Festival. All rights reserved.</p>
+            <ul>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="#">Cookie Policy </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
 
     <script src="JS/add.js"></script>
