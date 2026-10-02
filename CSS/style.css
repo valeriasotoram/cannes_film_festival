@@ -25,23 +25,30 @@ a {
 /* TIPOGRAFÍAS */
 /* Tipografía Título */
 
-.alien-block-regular {
-  font-family: "Alien Block", sans-serif;
+h1 {
+  font-family: "Imbue", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-/* Tipografía Subtítulo */
-.homemade-apple-regular {
+h2 {
   font-family: "Homemade Apple", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
-/* Tipografía Cuerpo */
-.homemade-apple-regular {
-  font-family: "Homemade Apple", cursive;
-  font-weight: 400;
+p {
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.pfooter ul li a {
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -177,7 +184,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-template-columns: 3;
+    grid-row: 1;
+    padding: 5vw 0 6vw;
     gap: 60px;
+}
+
+.room-design {
+    width: 33%;
+    margin-left: 4%;
 }
 
 .room-design img {
@@ -287,99 +302,145 @@ a {
 
 
 /* 2) TICKETS */
+.tabla {
+    width: 55%;
+    margin: 40px auto 100px auto;
+}
+
 .tabla > div {
-    padding: 5vh 0;
-    margin: 0;
-    box-sizing: border-box;
+    width: 100%;
 }
 
-.tabla > :first-child {
-    display: flex;
-    justify-content: flex-start;
-    gap: 5vw;
+
+.tabla > div > div:first-child {
+    margin-bottom: 30px;
 }
 
-.tabla > :nth-child(2) > :first-child{
-    padding: 0 0 3vh 0;
-    margin: 0;
-    box-sizing: border-box;
+.tabla p {
+    font-family: "Elms Sans", sans-serif;
 }
 
-.tabla > :nth-child(2) > :nth-child(2) > div {
-    padding: 2vh 3vw;
-    margin: 4vh;
-    box-sizing: border-box;
+.tabla > div > div:first-child p:first-child {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+
+.tabla > div > div:nth-child(2) > div {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 6vw;
-    border: 1px solid white;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 12px 20px;
+    margin-bottom: 15px;
 }
 
-.tabla > :last-child > p {
-    padding: 0 0 3vh 0;
-    margin: 0;
-    box-sizing: border-box;
+
+/* Senior / Adult / Student */
+
+.tabla label {
+    display: block;
+    font-family: "Elms Sans", sans-serif;
 }
 
-.tabla > :last-child > div {
-    display: flex;
-    justify-content: flex-start;
-    gap: 6vw;
+.tabla label:first-child {
+    font-size: 1rem;
+    font-weight: 500;
 }
+
+.tabla label:last-child {
+    font-size: 0.7rem;
+    margin-top: 3px;
+}
+
+
+/* Contador */
+
+.tabla input[type="number"] {
+    width: 70px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 7px;
+    text-align: center;
+}
+
+
+/* Saldo*/
 
 .saldo {
+    width: 65%;
+    max-width: 850px;
+    margin: 80px auto;
+    background-color: black;
+    color: white;
+    padding: 50px 70px;
+    border: none;
+    border-radius: 0;
+}
+
+.saldo > div:first-child {
+    padding: 0 0 30px 0;
+}
+
+.saldo > div:first-child p {
+    font-family: "Elms Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.saldo > div:nth-child(2) {
+    padding: 20px 0;
+
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+
+.saldo > div:nth-child(2) > div {
+    margin: 0;
     padding: 0;
-    margin: 0 20vw 15vh 20vw ;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
 }
 
-.saldo > div {
-    padding: 3vh 3vw;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.saldo > :nth-child(2) > div {
-    padding: 2vh 3vw;
-    margin: 0;
-    box-sizing: border-box;
-    margin: 0 4vh 0 4vh;
-}
-
-.saldo > :nth-child(2) > :first-child > div {
-    padding: 2vh 0;
-    margin: 0;
-    box-sizing: border-box;
+.saldo > div:nth-child(2) > div > div {
     display: flex;
     justify-content: space-between;
+
+    padding: 10px 0;
 }
 
-.saldo > :nth-child(2) > :last-child > div {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
+.saldo p {
+    font-family: "Elms Sans", sans-serif;
+    font-size: 0.85rem;
 }
 
-.saldo > :last-child {
+.saldo > div:nth-child(3) {
+    padding: 25px 0;
+    font-weight: 600;
+    border-bottom: 1px solid #444;
+}
+
+
+/* Botón */
+
+.saldo > div:last-child {
     display: flex;
     justify-content: flex-end;
-    size: 400;
+    padding: 30px 0 0 0;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  accent-color: #ff0000;
-}
-
-input {
-  background-color: #000000;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-  padding: 8px;
+.saldo input[type="submit"] {
+    background-color: #ff9ee2;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-family: "Elms Sans", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 
