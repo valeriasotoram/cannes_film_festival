@@ -52,6 +52,13 @@ p {
   font-style: normal;
 }
 
+.nav-desktop {
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 
 /* MENÚ*/
@@ -64,12 +71,13 @@ p {
     color: white;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding-top: 0.5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     padding-right: 1vw;
 }
 
