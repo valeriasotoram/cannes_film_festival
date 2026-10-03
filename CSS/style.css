@@ -488,6 +488,65 @@ footer {
     color: #ff9ee2;
 }
 
+/* Jurado nombre & foto  */
+
+.name-1{
+    color: #ff9ee2;
+}
+
+.jury-names:hover .name{
+    color: black;
+}
+
+.jury-names .name:hover{
+    color: #ff9ee2;
+}
+
+.jury-photo{
+    animation: aparecer-foto 0.5s ease;
+}
+
+@keyframes aparecer-foto{
+    from{ opacity: 0;}
+    to { opacity: 1;}
+}
+
+.jury-content:has(.name:hover) .jury-photo{
+    display: none;
+}
+
+.jury-content:has(.name-1:hover) .photo-1{
+    display: block;
+}
+
+.jury-content:has(.name-2:hover) .photo-2{
+    display: block;
+}
+
+.jury-content:has(.name-3:hover) .photo-3{
+    display: block;
+}
+
+.jury-content:has(.name-4:hover) .photo-4{
+    display: block;
+}
+
+.jury-content:has(.name-5:hover) .photo-5{
+    display: block;
+}
+
+.jury-content:has(.name-6:hover) .photo-6{
+    display: block;
+}
+
+.jury-content:has(.name-7:hover) .photo-7{
+    display: block;
+}
+
+.jury-content:has(.name-8:hover) .photo-8{
+    display: block;
+}
+
 /* AWARDS */
 
 .award {
