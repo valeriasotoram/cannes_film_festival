@@ -64,6 +64,12 @@ p {
 /* MENÚ*/
 .logo {
     padding-left: 1vw;
+    display: block;
+}
+.logo img{
+    width: 110px;
+    height: auto;
+    display: block;
 }
 
 .menu a {
@@ -122,8 +128,8 @@ p {
     display: none;
     cursor: pointer;
     font-size: 30px;
-
     z-index: 10000;
+    color: white;
 }
 
 .side-menu {
@@ -781,4 +787,261 @@ footer > :last-child > ul li a {
     font-family: "Elms Sans", sans-serif;
     font-weight: 200;
     font-size: 1rem;
+}
+
+/* MEDIA QUERIES  */
+
+/*  TABLET — 720px */
+
+@media (max-width: 720px) {
+
+
+    /* Menú & Hero */
+
+    .menu {
+        padding: 20px 5vw;
+    }
+
+    .hero-home {
+        width: 100%;
+    }
+
+    .img-hero {
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .titulo-hero {
+        font-size: 3.5rem;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .texto {
+        font-size: 1.6rem;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+
+    /* Historia de Cannes */
+
+    .room-block {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .room-top h1 {
+        font-size: 2.3rem;
+    }
+
+    .room-content {
+        gap: 30px;
+    }
+
+    .room-design {
+        width: 50%;
+    }
+
+    .room-design img {
+        width: 100%;
+        height: auto;
+    }
+
+    .room-text {
+        width: 50%;
+    }
+
+    .room-text p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+
+    /* Selected Films */
+
+    .gallery {
+        gap: 12px;
+    }
+
+    .column {
+        gap: 12px;
+    }
+
+    .column img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 40px 5vw;
+        gap: 25px;
+    }
+
+    .footer-logo img {
+        width: 120px;
+    }
+
+    .pfooter {
+        font-size: 0.75rem;
+    }
+
+}
+
+
+
+/*  MÓVIL — 480px  */
+
+@media (max-width: 480px) {
+
+    /* Menú */
+
+    .menu {
+        padding: 15px 20px;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .hamb {
+        display: block;
+    }
+
+
+    /* Hero*/
+
+    .hero-home {
+        width: 100%;
+    }
+
+    .img-hero {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .titulo-hero {
+        font-size: 2.5rem;
+        line-height: 1;
+        padding: 25px 20px 0 20px;
+    }
+
+    .texto {
+        font-size: 1.3rem;
+        padding: 10px 20px 30px 20px;
+    }
+
+
+    /* Awards*/
+
+    .room-block {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .room-top {
+        margin-top: 40px;
+    }
+
+    .room-top h1 {
+        font-size: 1.8rem;
+    }
+
+    .room-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .room-design {
+        width: 100%;
+    }
+
+    .room-design img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .room-text {
+        width: 100%;
+    }
+
+    .room-text p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .boton {
+        margin-top: 25px;
+    }
+
+    .boton a {
+        display: inline-block;
+        padding: 10px 20px;
+    }
+
+
+    /* Selected films */
+
+    .selected-top {
+        margin-top: 60px;
+    }
+
+    .gallery {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .column {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .column img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    /* Footer */
+
+    footer {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-logo img {
+        width: 110px;
+    }
+
+    .footersection {
+        width: 100%;
+    }
+
+    .footersection ul {
+        padding: 0;
+    }
+
+    .footerlinks {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .pfooter {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+
 }
