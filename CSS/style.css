@@ -93,6 +93,13 @@ p {
     list-style: none;
 }
 
+.nav-desktop a{
+    transition: color 0.3s ease;
+}
+
+.nav-desktop a:hover{
+    color: #ff9ee2;
+}
 
 /*Menú Tablet & Móvil*/
 .nav-mobile {
