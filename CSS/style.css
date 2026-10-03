@@ -297,6 +297,23 @@ footer {
     display: block;
 }
 
+.selected-top {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 4vw 4vw 0 4vw;
+}
+
+.selected-top h1 {
+    white-space: nowrap;
+}
+
+.room-top h1{
+    margin-top: 50px;
+    font-size: 100px;
+    width: 50%;
+    
+}
+
 
 /* The Jury*/
 
@@ -374,7 +391,7 @@ footer {
 
 
 
-/* 2) TICKETS */
+/* 3) TICKETS */
 .tabla {
     width: 55%;
     margin: 40px auto 100px auto;
