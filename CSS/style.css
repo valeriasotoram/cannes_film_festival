@@ -323,6 +323,7 @@ footer {
 }
 
 
+/* 2) EXPLORE */
 /* The Jury*/
 
 .jury {
@@ -479,6 +480,86 @@ footer {
 
 .award.reverse .room-top h1{
     transform: none;
+}
+
+
+/* Awards */
+.awards {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    padding: 4vw 3.5vw 7vw;
+    background-color: white;
+}
+
+.award {
+    display: flex;
+    align-items: flex-end;         
+    gap: 2.4vw;
+}
+
+.award-reverse {
+    flex-direction: row-reverse;    
+}
+
+.award-poster {
+    flex: 0 0 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2vw;
+    padding: 3vw 2.5vw;
+    background-color: black;
+    color: white;
+    border-radius: 3vw;
+}
+ 
+.award-poster img {
+    width: 60%;
+    aspect-ratio: 1 / 1.18;
+    object-fit: cover;
+    border-radius: 2vw;
+    display: block;
+}
+ 
+.award-title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);      
+    white-space: nowrap;
+    font-size: 5.2vw;
+    line-height: 1;
+    margin: 0;
+}
+ 
+.award-reverse .award-poster {
+    flex-direction: row-reverse;
+}
+ 
+.award-reverse .award-title {
+    transform: none;
+}
+ 
+.award-text {
+    flex: 0 0 36%;
+    padding: 2.2vw 2vw;
+    background-color: black;
+    color: white;
+    border-radius: 3vw;
+}
+ 
+.award-text h2 {
+    font-size: 1.6vw;
+    margin-bottom: 1.2vw;
+}
+ 
+.award-text p {
+    font-size: 0.8vw;
+    line-height: 1.5;
+    text-align: center;
+}
+ 
+.award-reverse .award-text h2 {
+    text-align: right;
 }
 
 
