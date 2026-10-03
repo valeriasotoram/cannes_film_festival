@@ -397,6 +397,89 @@ footer {
     color: #ff9ee2;
 }
 
+/* AWARDS */
+
+.award {
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+.award .room-content {
+    display: contents;
+}
+
+.award .room-top{
+    width: 15.5vw;
+    padding: 0;
+    background-color: black;
+    color: white;
+    border-radius: 4vw 0 0 4vw;
+    align-self: stretch;
+}
+
+.award .room-top h1{
+    margin: 0;
+    width: auto;
+    font-size: 6vw;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.award .room-design {
+    width: 37vw;
+    margin-left: 0;
+    padding: 8wv 5.5vw 8vw 0;
+    background-color: black;
+    border-radius: 0 4vw 4vw 0;
+}
+.award .room-design img {
+    aspect-ratio: 5 /6 ;
+    border-radius: 2vw;
+}
+
+.award .room-text {
+    width: 36vw;
+    margin: 0 0 0 2.5vw;
+    padding: 3.5vw;
+    background-color: black;
+    color: white;
+    border-radius: 4vw;
+}
+
+.award .room-text h2 {
+    font-size: 2.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.award .room-text p {
+    font-size: 1.25vw;
+    line-height: 1.5;
+    white-space: normal;
+    margin-top: 0;
+}
+
+.award.reverse .room-text{
+    order: 1;
+    margin: 0 2.5vw 0 0;
+    text-align: right;
+}
+
+.award.reverse .room-design{
+    order: 2;
+    padding: 8vw 0 8vw 5vw;
+    border-radius: 4vw 0 0 4vw;
+}
+.award.reverse .room-top {
+    order: 3;
+    border-radius: 0 4vw 4vw 0;
+}
+
+.award.reverse .room-top h1{
+    transform: none;
+}
 
 
 /* 3) TICKETS */
