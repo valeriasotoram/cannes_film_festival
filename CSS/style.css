@@ -231,6 +231,14 @@ p {
     z-index: 2;
     animation: punto 30s step-end infinite;
 }
+
+@keyframes punto {
+    0%   { transform: translateX(-48px);}
+    20%  { transform: translateX(-24px);}
+    40%  { transform: translateX(0);}
+    60%  { transform: translateX(24px);}
+    80%  { transform: translateX(48px);}
+}
                 
 
 /* 1) FESTIVAL */
