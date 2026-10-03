@@ -293,8 +293,16 @@ footer {
 
 .column img{
     width: 100%;
-    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.column img:hover{
+    transform: scale(1.05);
+    position: relative;
+    z-index: 1;
 }
 
 .selected-top {
