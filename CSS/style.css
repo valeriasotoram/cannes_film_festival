@@ -416,7 +416,6 @@ footer {
 }
 
 
-
 .tabla > div > div:nth-child(2) > div {
     width: 100%;
     display: flex;
@@ -426,6 +425,11 @@ footer {
     border-radius: 30px;
     padding: 12px 20px;
     margin-bottom: 15px;
+}
+
+.tabla h1 {
+    font-size: 80px;
+    margin-top: 80px;
 }
 
 
@@ -551,6 +555,18 @@ footer {
     display: flex;
     justify-content: center;
     gap: 5vw;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo img {
+    width: 12vw;
+    max-width: 220px;
+    min-width: 120px;
+    height: auto;
 }
 
 /* FOOTERprimerhijo */
