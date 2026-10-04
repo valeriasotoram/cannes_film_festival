@@ -580,8 +580,8 @@ footer {
 .awards-title {
     font-weight: 400;
     font-size: 7vw;
-    margin-top: 10vw;
-    margin-bottom: 4vw;
+    margin-top: 7vw;
+    margin-bottom: 10vw;
     margin-left: 8.75vw;
 }
 
@@ -982,99 +982,347 @@ footer > :last-child > ul li a {
 
 @media (max-width: 720px) {
 
-
-    /* Menú & Hero */
-
-    .menu {
-        padding: 20px 5vw;
-    }
-
-    .hero-home {
+    /* Selected films  */
+    .gallery {
+        display: grid;
         width: 100%;
+        padding: 5vw;
+        gap: 2vw;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .img-hero {
+    .gallery .column {
+        display: contents;
+    }
+
+    .gallery img {
         width: 100%;
-        height: 60vh;
-        object-fit: cover;
-    }
-
-    .titulo-hero {
-        font-size: 3.5rem;
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-
-    .texto {
-        font-size: 1.6rem;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        height: auto;
+        display: block;
     }
 
 
-    /* Historia de Cannes */
+    /* The Story of Cannes */
 
     .room-block {
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding: 0 0 15vw 0;
+        position: relative;
+        background-color: black;
     }
 
-    .room-top h1 {
-        font-size: 2.3rem;
+    .room-top:first-child {
+        width: 22%;
+        padding: 7vw 0;
+        background-color: black;
+    }
+
+    .room-top:first-child > *{
+        width: auto;
+        margin: 0;
+        font-size: 12vw;
     }
 
     .room-content {
+        width: 78%;
+        padding: 7vw 6vw 0 3vw;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
         gap: 30px;
     }
 
     .room-design {
-        width: 50%;
+        width: 75%;
+        margin: 0;
     }
 
     .room-design img {
         width: 100%;
         height: auto;
+        display: block;
     }
 
     .room-text {
-        width: 50%;
+        width: 100%;
+        margin: 6vw 0 0 0;
     }
 
     .room-text p {
-        font-size: 0.9rem;
+        margin: 0;
+        font-size: 0.75rem;
+        white-space: pre-line;
         line-height: 1.5;
     }
 
+    .boton{
+        padding-left: 25%;
+        margin-top: 7vw;
+    }
 
-    /* Selected Films */
+    .boton > * {
+        padding: 0.7vw 1.5vw;
+        font-size: 0.7rem;
+        line-height: 1.2;
+        border-radius: 3vw;
+    }
 
+    /*Selected Films*/
     .gallery {
-        gap: 12px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+        padding: 5vw;
+        width: 100%;
     }
 
-    .column {
-        gap: 12px;
+    .gallery .column {
+        display: contents;
     }
 
-    .column img {
+    .gallery img {
         width: 100%;
         height: auto;
+        display: block;
     }
 
+
+    /* Jurado */
+
+    .jury {
+        padding: 10vw 7vw 15vw;
+    }
+
+    .jury > h1 {
+        font-size: 3.2rem;
+        margin-bottom: 6vw;
+        line-height: 1;
+    }
+
+    .jury-content {
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 5vw;
+    }
+
+    .jury-images {
+        width: 48%;
+    }
+
+    .jury-photo{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+
+    }
+    
+    .jury-names {
+        width: 42%;
+    }
+
+    .name{
+        font-size: clamp(0.85rem, 2.4vw, 1.15rem);
+        padding: 11px 4px;
+        white-space: nowrap;
+    }
+
+    .jury + h1,
+    .awards-title {
+        font-size: 3.2rem;
+        line-height: 1;
+        margin: 0 0 3vw 4vw;
+    }
+ 
+    /* .awards {
+        padding: 8vw 5vw;
+    }
+ 
+    .awards h1 {
+        font-size: 4rem;
+        margin-bottom: 6vw;
+    } */
+ 
+    .room-block.award {
+        width: 92%;
+        margin: 0 auto 10vw auto;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 0;
+        background-color: transparent;
+    }
+ 
+    .room-block.award .room-top {
+        width: 8vw;
+        padding: 0;
+        border-radius: 4vw 0 0 4vw;
+    }
+ 
+    .room-block.award .room-top h1 {
+        font-size: 5.5vw;
+        margin: 0;
+        width: auto;
+    }
+ 
+    .room-block.award .room-design {
+        width: 34vw;
+        margin: 0;
+        padding: 5vw 4vw 5vw 0;
+        border-radius: 0 4vw 4vw 0;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+    }
+ 
+    .room-block.award .room-design img {
+        width: 100%;
+        border-radius: 2.5vw;
+    }
+ 
+    .room-block.award .room-text {
+        width: 46vw;
+        margin: 0 0 0 2vw;
+        padding: 3vw;
+        border-radius: 4vw;
+    }
+ 
+    .room-block.award .room-text h2 {
+        font-size: 3vw;
+        margin-bottom: 1.5vw;
+    }
+ 
+    .room-block.award .room-text p {
+        font-size: clamp(0.68rem, 1.9vw, 0.9rem);
+        line-height: 1.4;
+    }
+ 
+    .room-block.award.reverse {
+        flex-direction: row;
+    }
+ 
+    .room-block.award.reverse .room-top {
+        border-radius: 0 4vw 4vw 0;
+    }
+ 
+    .room-block.award.reverse .room-design {
+        padding: 5vw 0 5vw 4vw;
+        border-radius: 4vw 0 0 4vw;
+    }
+ 
+    .room-block.award.reverse .room-text {
+        margin: 0 2vw 0 0;
+    }
+ 
+    /* .award-image {
+        width: 52%;
+    }
+ 
+    .award-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+ 
+    .award-text {
+        width: 42%;
+        padding: 4vw;
+        box-sizing: border-box;
+    }
+ 
+    .award-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2vw;
+    }
+ 
+    .award-text p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+  */
+
+    /* Tickets */
+    
+    .tabla {
+        width: 85%;
+    }
+    
+    .tabla h1{
+        font-size: 3.2rem;
+        line-height: 1;
+        margin-top: 40px;
+
+    }
+
+    .saldo{
+        width: 85%;
+        padding: 40px 50px;
+    }
 
     /* Footer */
 
     footer {
-        padding: 40px 5vw;
-        gap: 25px;
+        padding: 5vw 7vw;
+        gap: 5vw;
     }
 
     .footer-logo img {
-        width: 120px;
+        width: 15vw;
+        min-width: 70px;
+        max-width: 90px;
     }
 
-    .pfooter {
-        font-size: 0.75rem;
+    .footer > :nth-child(3) {
+        padding: 0 4vw;
+    }
+
+    .footer > :nth-child(3) > div:first-child ul{
+        gap:1.5vw
+    }
+
+    .footer > :nth-child(3) > div:first-child i{
+        font-size: 2rem;
+    }
+
+    .footer > :nth-child(3) > div:first-child::before{
+        font-size: 0.9rem;
+        line-height: 1.35;
+        max-width: 13rem;
+        margin-bottom: 2vw;
+    }
+
+    footer > :nth-child(3) > div:last-child {
+        max-width: 40%;
+    }
+
+    .footerlinks{
+        gap: 1vw;
+    }
+
+    .footerlinks p{
+        font-size: 1rem;
+    }
+
+    .footerlinks i{
+        font-size: 1.5rem;
+    }
+
+    footer > :last-child {
+        padding-top: 1rem;
+    }
+
+    footer > :last-child .pfooter {
+        font-size: 0.65rem;
+    }
+
+    footer > :last-child > ul {
+        gap: 1.5vw;
+    }
+
+    footer > :last-child > ul li a {
+        font-size: 0.65rem;
     }
 
 }
@@ -1084,13 +1332,130 @@ footer > :last-child > ul li a {
 /*Mobile*/
 @media screen and (max-width: 480px) {
 
+    /* MENU HAMBURGUESA */
+    .nav-desktop{
+        display: none;
+    }
+
+    .menu{
+        padding: 8px 5vw;
+    }
+
+    .logo{
+        padding-left: 0;
+    }
+
+    .logo img{
+        width: 58px;
+    }
+
+    .hamb{
+        display: block;
+        font-size: 26px;
+    }
+
+    .hamb .fa-xmark{
+        padding: 28px 10px 10px;
+    }
+
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-mobile::before{
+        content: "";
+        width: 110px;
+        height: 60px;
+        display: block;
+        margin-top: 33vwx;
+
+    }
+
+    .menu .nav-mobile ul {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 33vw;
+        gap: 32px;
+    }
+
+    .nav-mobile a {
+        font-family: "Elms Sans", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: white;
+    }
+
+    .nav-mobile a.active{
+        font-weight: 600;
+    }
+
+
     /* 1) FESTIVAL */
+    /* Hero */
+
+    .carrusel{
+        aspect-ratio: 3 / 5;
+    }
+
+    .titulo-hero{
+        font-size: 2.5rem;
+        margin-top: 6vw;
+        padding: 0;
+        line-height: 1;
+    }
+
+    .texto{
+        font-size: 1.5;
+        margin-top: 2vw;
+        margin-bottom: 12vw;
+        padding-left: 5vw;
+        padding-right: 0;
+    }
+
+    /* The story of cannes */
+
+    .room-block{
+        padding-bottom: 8vw;
+
+    }
+
+    .room-content{
+        padding: 26vw 6vw 0 3vw;
+    }
+
+    .room-design{
+        width: 100%;
+    }
+
+    .room-text{
+        margin: 9vw 0 0 0;
+    }
+
+    .room-text p{
+        font-size: 0.75rem;
+        line-height: 1.35;
+    }
+
+    .boton{
+        padding-left: 39%;
+        margin-top: 8vw;
+    }
+
+    .boton > *{
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        border-radius: 20px;
+        line-height: 1.3;
+    }
+
     /*Selected Films*/
     .gallery {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 6vw;
+        padding: 6.5vw 6.5vw 9vw;
         gap: 0;
     }
 
@@ -1106,130 +1471,270 @@ footer > :last-child > ul li a {
         margin-bottom: 4vw;
     }
 
+    .selected-top{
+        padding: 8vw 8vw 0 8vw;
+    }
+
+    .selected-top h1{
+        width: auto;
+        margin: 0;
+        font-size: 2.7rem;
+        line-height: 1;
+    }
+
 
     /* 2) EXPLORE */
     /*The Jury 2026*/
 
     .jury {
-        padding: 10vw 7vw 15vw;
+        padding: 12vw 9.5vw 15vw;
     }
 
     .jury > h1 {
         font-size: 2.7rem;
-        margin-bottom: 8vw;
+        margin-bottom: 6vw;
+        line-height: 1;
     }
 
-    .jury-content {
+    .jury .jury-content {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 7vw;
+        gap: 0vw;
     }
 
-    .jury-images {
-        width: 80%;
+    .jury .jury-images {
+        display: contents;
     }
 
-    .jury-photo {
+    .jury .jury-names {
+        display: contents;
+    }
+
+    .jury .jury-content .jury-images .jury-photo {
+        display: block;
         width: 100%;
         height: auto;
-        aspect-ratio: 1 / 1;
         object-fit: cover;
+        aspect-ratio: 1 / 1;
     }
 
-    .jury-names {
+    .jury .jury-names .name{
         width: 100%;
+        padding: 0;
+        margin: 4vw 0 7vw 0;
+        font-size: 1.3rem;
+        color: black;
+        border-bottom: none;
+        white-space: normal;
+        cursor: default;
     }
 
-    .name {
-        font-size: 1.15rem;
-        padding: 11px 3px;
+    .jury .photo-1{
+        order: 1;
+    }
+
+    .jury .name-1{
+        order: 2;
+    }
+
+    .jury .photo-2{
+        order: 3;
+    }
+
+    .jury .name-2{
+        order: 4;
+    }
+
+    .jury .photo-3{
+        order: 5;
+    }
+
+    .jury .name-3{
+        order: 6;
+    }
+
+    .jury .photo-4{
+        order: 7;
+    }
+
+    .jury .name-4{
+        order: 8;
+    }
+
+    .jury .photo-5{
+        order: 9;
+    }
+
+    .jury .name-5{
+        order: 10;
+    }
+
+    .jury .photo-6{
+        order: 11;
+    }
+
+    .jury .name-6{
+        order: 12;
+    }
+
+    .jury .photo-7{
+        order: 13;
+    }
+
+    .jury .name-7{
+        order: 14;
+    }
+
+    .jury .photo-8{
+        order: 15;
+    }
+
+    .jury .name-8{
+        order: 16;
     }
 
 
     /* Awards */
 
-    .award {
-        width: 88%;
-        margin: 0 auto 18vw auto;
-        display: grid;
-        grid-template-columns: 24% 76%;
-        grid-template-rows: auto auto;
-        row-gap: 2vw;
-        align-items: stretch;
+    .jury + h1,
+    .awards-title{
+        font-size: 2.7rem;
+        margin: 0 0 4vw 5.5vw;
     }
 
-    .award .room-content {
+
+     .room-block.award,
+     .room-block.award.reverse { 
+        width: 89%;
+        margin: 0 auto 24vw auto;
+        padding: 0;
+        display: grid;
+        background-color: transparent;
+        grid-template-columns: 28% 72%;
+        grid-template-rows: auto auto;
+        row-gap: 2vw;
+        column-gap: 0;
+        align-items: stretch;
+        justify-content: start;
+    }
+
+    .room-block.award .room-content {
         display: contents;
     }
 
-    .award .room-top {
+    .room-block.award.reverse{
+        grid-template-columns: 72% 28%;
+    }
+
+    .room-block.award .room-top {
         grid-column: 1;
         grid-row: 1;
         width: 100%;
+        padding: 0;
         min-height: 0;
         border-radius: 8vw 0 0 8vw;
         display: flex;
         justify-content: center;
+        background-color: black;
         align-items: center;
-        padding: 4vw 0;
+        align-self: stretch;
     }
 
-
-    .award .room-top h1 {
-        font-size: 2.2rem;
+    .room-block.award .room-top h1 {
+        width: auto;
+        margin: 0;
+        font-size: 15.5vw;
         line-height: 1;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
         white-space: nowrap;
     }
 
-    .award .room-design {
-        grid-column: 2;
-        grid-row: 1;
+    .room-block.award .room-design {
         width: 100%;
         margin: 0;
-        padding: 5vw 5vw 5vw 0;
+        padding: 12.7vw 6vw 12.7vw 0;
         border-radius: 0 8vw 8vw 0;
+        grid-column: 2;
+        grid-row: 1;
+        display: block;
+        background-color: black;
     }
 
 
-    .award .room-design img {
+    .room-block.award .room-design img {
         display: block;
         width: 100%;
         height: auto;
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 5 / 6;
         object-fit: cover;
-        border-radius: 6vw;
+        border-radius: 5.5vw;
     }
 
 
-    .award .room-text {
+    .room-block.award .room-text {
         grid-column: 1 / 3;
         grid-row: 2;
         width: 100%;
-        margin: 2vw 0 0 0;
-        padding: 8vw;
+        margin: 0;
+        padding: 12vw 10vw;
         border-radius: 8vw;
         text-align: left;
     }
 
-
-    .award .room-text h2 {
-        font-size: 1.5rem;
+    .room-block.award .room-text h2 {
+        font-size: 1.3rem;
         margin-bottom: 5vw;
     }
 
 
-    .award .room-text p {
-        font-size: 0.85rem;
-        line-height: 1.45;
+    .room-block.award .room-text p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    } 
+
+    .room-block.award.reverse .room-top {
+        grid-column: 2;
+        grid-row: 1;
+        border-radius: 0 8vw 8vw 0;
+    }
+ 
+    .room-block.award.reverse .room-top h1 {
+        transform: none;
+    }
+ 
+    .room-block.award.reverse .room-design {
+        padding: 12.7vw 0 12.7vw 6vw;
+        border-radius: 8vw 0 0 8vw;
+        grid-column: 1;
+        grid-row: 1;
+    }
+ 
+    .room-block.award.reverse .room-text {
+        margin: 0;
+        text-align: left;
+        grid-column: 1 / 3;
+        grid-row: 2;
     }
 
 
     /* 3) TICKETS */
+
+    .tabla{
+        width: 91%;
+        margin: 40px auto 50px auto;
+    }
+
+    .tabla > div > div:first-child{
+        padding-left: 3vw;
+        margin-bottom: 8vw;
+    }
+
     .tabla > div > div:first-child h1 {
         font-size: 12vw;
         line-height: 1.05;
+        margin-top: 12vw;
         margin-bottom: 4vw;
     }
 
@@ -1238,11 +1743,51 @@ footer > :last-child > ul li a {
         line-height: 1.3;
     }
 
+    .tabla > div > div:first-child(2) > div{
+        padding: 12vw 5vw 12vw 7vw;
+        border-radius: 45px;
+        margin-bottom: 14px;
+    }
 
+    .tabla label:first-child{
+        font-size: 1rem;
+    }
+
+    .tabla label:last-child{
+        font-size: 0.6rem;
+    }
+
+    .tabla input[type="number"]{
+        width: 64px;
+        padding: 3px;
+        font-size: 0.8rem;
+    }
+
+    .saldo {
+        width: 100%;
+        margin: 0;
+        padding: 12vw 8vw 10vw;
+        max-width: none;
+    }
+ 
+    .saldo > div:first-child {
+        padding: 0 0 8vw 0;
+    }
+ 
+    .saldo > div:nth-child(2) > div > div {
+        padding: 8px 6vw;
+    }
+ 
+    .saldo > div:nth-child(3) p {
+        display: flex;
+        font-size: 1rem;
+        justify-content: space-between;
+    }
+    
     /*Footer*/
     footer {
         width: 100%;
-        padding: 7vw 7vw 5vw;
+        padding: 10.5vw 7vw 5vw;
         display: flex;
         flex-direction: column;
         gap: 0;
@@ -1253,11 +1798,11 @@ footer > :last-child > ul li a {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-bottom: 10vw;
+        margin-bottom: 18vw;
     }
 
     .footer-logo img {
-        width: 20vw;
+        width: 26vw;
         min-width: 0;
         max-width: none;
     }
@@ -1268,26 +1813,26 @@ footer > :last-child > ul li a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 9vw;
+        gap: 12vw;
     }
 
     footer > :nth-child(3) > div:first-child::before {
-        font-size: 0.9rem;
-        line-height: 1.35;
-        max-width: none;
-        margin-bottom: 5vw;
+        font-size: 0.8rem;
+        line-height: 1.3;
+        max-width: 12rem;
+        margin: 0 auto 5vw auto ;
         text-align: center;
     }
 
     footer > :nth-child(3) > div:first-child i {
-        font-size: 1.7rem;
+        font-size: 1.15rem;
     }
 
 
     footer > :nth-child(3) > div:first-child ul {
         display: flex;
         justify-content: center;
-        gap: 1.5vw;
+        gap: 4.5vw;
     }
 
     .footerlinks {
@@ -1297,25 +1842,32 @@ footer > :last-child > ul li a {
     }
 
     .footerlinks p {
-        font-size: 0.8rem;
-        line-height: 1.3;
+        font-size: 0.7rem;
+        line-height: 1.35;
         margin: 0;
     }
 
     .footerlinks i {
-        font-size: 1rem;
-        margin-top: 0.15rem;
+        width: 1rem;
+        font-size: 0.95rem;
+        margin-top: 0.1rem;
     }
 
     footer > :nth-child(3) > div:last-child {
-        max-width: 88%;
         max-width: none;
         align-self: center;
+    }
+
+    footer > :nth-child(3) > div:last-child ul{
+        gap: 6vw;
+    }
+     footer > :nth-child(3) > div:last-child li:last-child{
+        text-decoration: underline;
     }
     
     footer > :last-child {
         width: 100%;
-        margin-top: 10vw;
+        margin-top: 20vw;
         padding-top: 3vw;
         border-top: 1px solid white;
         display: flex;
@@ -1346,256 +1898,3 @@ footer > :last-child > ul li a {
     }
 
 }
-
-
-
-
-
-/*Tablet*/
-@media screen and (max-width: 720px) {
-
-    /* 1) FESTIVAL */
-    /*Selected Films*/
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2vw;
-        padding: 5vw;
-        width: 100%;
-    }
-
-    .gallery .column {
-        display: contents;
-    }
-
-    .gallery img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    /*The Story Of Cannes*/
-    .room-block {
-        position: relative;
-        padding: 0;
-        background-color: black;
-        padding-bottom: 15vw;
-    }
-
-    .room-top:first-child {
-        width: 22%;
-        padding: 7vw 0;
-        background-color: black;
-    }
-
-    .room-top:first-child > * {
-        font-size: 12vw;
-        margin: 0;
-        width: auto;
-    }
-
-    .room-content {
-        width: 78%;
-        flex: none;
-        display: flex;
-        flex-direction: column;
-        padding: 7vw 6vw 0 3vw;
-        gap: 0;
-        background-color: black;
-    }
-
-    .room-design {
-        width: 75%;
-        margin: 0;
-    }
-
-    .room-design img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .room-text {
-        width: 100%;
-        margin: 6vw 0 0 0;
-    }
-
-    .room-text p {
-        font-size: 0.75rem;
-        line-height: 1.5;
-        margin: 0;
-        white-space: pre-line;
-    }
-
-
-    .boton {
-        padding-left: 25%;
-        margin-top: 7vw;
-    }
-
-    .boton > * {
-        padding: 0.7vw 1.5vw;
-        border-radius: 3vw;
-
-        font-size: 0.7rem;
-        line-height: 1.2;
-    } 
-
-
-    /* 2) EXPLORE */
-    /*The Jury 2026*/
-
-    .jury {
-        padding: 10vw 7vw 15vw;
-    }
-
-    .jury > h1 {
-        font-size: 4.5rem;
-        margin-bottom: 8vw;
-    }
-
-    .jury-content {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 7vw;
-    }
-
-    .jury-images {
-        width: 80%;
-    }
-
-    .jury-photo {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-    }
-
-    .jury-names {
-        width: 100%;
-    }
-
-    .name {
-        font-size: 1.15rem;
-        padding: 11px 3px;
-    }
-
-
-    /*Awards*/
-
-    .awards {
-        padding: 8vw 5vw;
-    }
-
-    .awards h1 {
-        font-size: 4rem;
-        margin-bottom: 6vw;
-    }
-
-    .room-block.award {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 4vw;
-        margin-bottom: 10vw;
-    }
-
-    .room-block.award.reverse {
-        flex-direction: row-reverse;
-    }
-
-    .award-image {
-        width: 52%;
-    }
-
-    .award-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .award-text {
-        width: 42%;
-        padding: 4vw;
-        box-sizing: border-box;
-    }
-
-    .award-text h2 {
-        font-size: 1.5rem;
-        margin-bottom: 2vw;
-    }
-
-    .award-text p {
-        font-size: 0.85rem;
-        line-height: 1.4;
-    }
-}
-
-
-
-    /*Footer*/
-    footer {
-        padding: 5vw 7vw;
-        gap: 5vw;
-    }
-
-    .footer-logo img {
-        width: 15vw;
-        min-width: 70px;
-        max-width: 90px;
-    }
-
-    footer > :nth-child(3) {
-        padding: 0 4vw;
-    }
-
-    footer > :nth-child(3) > div:first-child::before {
-        font-size: 0.9rem;
-        line-height: 1.35;
-        max-width: 13em;
-        margin-bottom: 2vw;
-    }
-
-    footer > :nth-child(3) > div:first-child i {
-        font-size: 1.7rem;
-    }
-
-    footer > :nth-child(3) > div:first-child ul {
-        gap: 1.5vw;
-    }
-
-    .footerlinks {
-        gap: 1vw;
-    }
-
-    .footerlinks p {
-        font-size: 0.8rem;
-        line-height: 1.3;
-    }
-
-    .footerlinks i {
-        font-size: 1rem;
-    }
-
-    footer > :nth-child(3) > div:last-child {
-        max-width: 37%;
-    }
-    
-    footer > :last-child {
-        padding-top: 1.2vw;
-    }
-
-    footer > :last-child .pfooter {
-        font-size: 0.65rem;
-    }
-
-    footer > :last-child > ul {
-        gap: 1.5vw;
-    }
-
-    footer > :last-child > ul li a {
-        font-size: 0.65rem;
-    }
-
-
