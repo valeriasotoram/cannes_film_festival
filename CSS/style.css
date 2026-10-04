@@ -959,6 +959,13 @@ footer > :last-child > ul li a {
     font-size: 1rem;
 }
 
+
+
+
+
+
+
+
 /* MEDIA QUERIES  */
 
 /*  TABLET — 720px */
@@ -1101,6 +1108,46 @@ footer > :last-child > ul li a {
         line-height: 1.3;
     }
 
+
+    /* 2) EXPLORE */
+    /*The Jury 2026*/
+
+    .jury {
+        padding: 10vw 7vw 15vw;
+    }
+
+    .jury > h1 {
+        font-size: 2.7rem;
+        margin-bottom: 8vw;
+    }
+
+    .jury-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7vw;
+    }
+
+    .jury-images {
+        width: 80%;
+    }
+
+    .jury-photo {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .jury-names {
+        width: 100%;
+    }
+
+    .name {
+        font-size: 1.15rem;
+        padding: 11px 3px;
+    }
+}
+
     /*Footer*/
     footer {
         width: 100%;
@@ -1210,10 +1257,6 @@ footer > :last-child > ul li a {
 
 
 
-
-}
-
-
 /*Tablet*/
 @media screen and (max-width: 720px) {
 
@@ -1303,6 +1346,46 @@ footer > :last-child > ul li a {
         font-size: 0.7rem;
         line-height: 1.2;
     } 
+
+
+    /* 2) EXPLORE */
+    /*The Jury 2026*/
+
+    .jury {
+        padding: 10vw 7vw 15vw;
+    }
+
+    .jury > h1 {
+        font-size: 2.7rem;
+        margin-bottom: 8vw;
+    }
+
+    .jury-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7vw;
+    }
+
+    .jury-images {
+        width: 80%;
+    }
+
+    .jury-photo {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .jury-names {
+        width: 100%;
+    }
+
+    .name {
+        font-size: 1.15rem;
+        padding: 11px 3px;
+    }
+
 
 
     /*Footer*/
