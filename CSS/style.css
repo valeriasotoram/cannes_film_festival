@@ -1073,11 +1073,65 @@ footer > :last-child > ul li a {
 /*Tablet*/
 @media screen and (max-width: 720px) {
 
+    /* 1) FESTIVAL */
+    /*The Story Of Cannes*/
+
+    .room-block {
+        position: relative;
+        padding: 0;
+        background-color: black;
+        padding-bottom: 15vw;
+    }
+
+    .room-top:first-child {
+        width: 22%;
+        padding: 7vw 0;
+        background-color: black;
+    }
+
+    .room-top:first-child > * {
+        font-size: 12vw;
+        margin: 0;
+        width: auto;
+    }
+
+    .room-content {
+        width: 78%;
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        padding: 7vw 6vw 0 3vw;
+        gap: 0;
+        background-color: black;
+    }
+
+    .room-design {
+        width: 75%;
+        margin: 0;
+    }
+
+    .room-design img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .room-text {
+        width: 100%;
+        margin: 6vw 0 0 0;
+    }
+
+    .room-text p {
+        font-size: 0.75rem;
+        line-height: 1.5;
+        margin: 0;
+        white-space: pre-line;
+    }
 
 
     .boton {
-        padding-left: 52%;
-        margin-top: -12vw;
+        padding-left: 25%;
+        margin-top: 7vw;
     }
 
     .boton > * {
@@ -1088,13 +1142,15 @@ footer > :last-child > ul li a {
         line-height: 1.2;
     } 
 
+
+    /*Footer*/
     footer {
         padding: 5vw 7vw;
         gap: 5vw;
     }
 
     .footer-logo img {
-        width: 9vw;
+        width: 15vw;
         min-width: 70px;
         max-width: 90px;
     }
@@ -1110,9 +1166,6 @@ footer > :last-child > ul li a {
         margin-bottom: 2vw;
     }
 
-
-
-
     footer > :nth-child(3) > div:first-child i {
         font-size: 1.7rem;
     }
@@ -1120,9 +1173,6 @@ footer > :last-child > ul li a {
     footer > :nth-child(3) > div:first-child ul {
         gap: 1.5vw;
     }
-
-
-   
 
     .footerlinks {
         gap: 1vw;
@@ -1140,8 +1190,6 @@ footer > :last-child > ul li a {
     footer > :nth-child(3) > div:last-child {
         max-width: 37%;
     }
-
-
     
     footer > :last-child {
         padding-top: 1.2vw;
