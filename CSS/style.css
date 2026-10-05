@@ -982,6 +982,11 @@ footer > :last-child > ul li a {
 
 @media (max-width: 720px) {
 
+    /* Hero */
+    .titulo-hero {
+        font-size: 5rem;
+    }
+
     /* Selected films  */
     .gallery {
         display: grid;
@@ -1265,32 +1270,39 @@ footer > :last-child > ul li a {
 
     footer {
         padding: 5vw 7vw;
-        gap: 5vw;
+        gap: 4vw;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
     }
 
     .footer-logo img {
-        width: 15vw;
-        min-width: 70px;
-        max-width: 90px;
+        width: 80px;
     }
 
-    .footer > :nth-child(3) {
+    footer > :nth-child(3) {
         padding: 0 4vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
-    .footer > :nth-child(3) > div:first-child ul{
+    footer > :nth-child(3) > div:first-child ul{
         gap:1.5vw
     }
 
-    .footer > :nth-child(3) > div:first-child i{
-        font-size: 2rem;
+    footer > :nth-child(3) > div:first-child i{
+        font-size: 1.5rem;
     }
 
-    .footer > :nth-child(3) > div:first-child::before{
-        font-size: 0.9rem;
+    footer > :nth-child(3) > div:first-child::before{
+        font-size: 0.8rem;
         line-height: 1.35;
-        max-width: 13rem;
-        margin-bottom: 2vw;
+        max-width: 10rem;
+        margin-bottom: 1.5vw;
     }
 
     footer > :nth-child(3) > div:last-child {
@@ -1302,11 +1314,11 @@ footer > :last-child > ul li a {
     }
 
     .footerlinks p{
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     .footerlinks i{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     footer > :last-child {
@@ -1314,7 +1326,7 @@ footer > :last-child > ul li a {
     }
 
     footer > :last-child .pfooter {
-        font-size: 0.65rem;
+        font-size: 0.55rem;
     }
 
     footer > :last-child > ul {
@@ -1322,10 +1334,13 @@ footer > :last-child > ul li a {
     }
 
     footer > :last-child > ul li a {
-        font-size: 0.65rem;
+        font-size: 0.55rem;
     }
 
 }
+
+
+
 
 
 /*MEDIA QUERIES*/
@@ -1388,8 +1403,9 @@ footer > :last-child > ul li a {
     }
 
     .nav-mobile a.active{
-        font-weight: 600;
+        font-weight: 400;
     }
+
 
 
     /* 1) FESTIVAL */
@@ -1407,7 +1423,7 @@ footer > :last-child > ul li a {
     }
 
     .texto{
-        font-size: 1.5;
+        font-size: 1.2rem;
         margin-top: 2vw;
         margin-bottom: 12vw;
         padding-left: 5vw;
@@ -1439,7 +1455,7 @@ footer > :last-child > ul li a {
     }
 
     .boton{
-        padding-left: 39%;
+        padding-left: 25%;
         margin-top: 8vw;
     }
 
@@ -1768,6 +1784,8 @@ footer > :last-child > ul li a {
         margin: 0;
         padding: 12vw 8vw 10vw;
         max-width: none;
+        margin-bottom: 12vw;
+        border-radius: 30px;
     }
  
     .saldo > div:first-child {
