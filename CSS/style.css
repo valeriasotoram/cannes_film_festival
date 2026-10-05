@@ -987,6 +987,10 @@ footer > :last-child > ul li a {
         font-size: 5rem;
     }
 
+    .nav-desktop {
+    margin-right: 3vw;
+    }
+
     /* Selected films  */
     .gallery {
         display: grid;
