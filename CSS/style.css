@@ -139,28 +139,10 @@ p {
     z-index: 10000;
 }
 
-.side-menu {
-    display: none;
-}
-
 .hamb .fa-xmark {
     display: none;
     color: white;
     padding: 20px;
-}
-
-
-
-.side-menu:checked ~ .nav-mobile {
-    max-height: 100%;
-}
-
-.side-menu:checked ~ .hamb .fa-bars {
-    display: none;
-}
-
-.side-menu:checked ~ .hamb .fa-xmark {
-    display: block;
 }
 
 

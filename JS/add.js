@@ -1,3 +1,11 @@
+var botonMenu = document.getElementById("botonMenu");
+var menuMobile = document.getElementById("menuMobile");
+
+menuMobile.classList.toggle("abierto");
+
+botonMenu.classList.toggle("abierto")
+
+
 // PASO 1: Seleccionar elementos
 
 var senior = document.getElementById("cant-senior");
