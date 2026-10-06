@@ -1,3 +1,10 @@
+var botonMenu = document.getElementById("botonMenu");
+var menuMobile = document.querySelector(".nav-mobile");
+
+botonMenu.addEventListener("click", function (){
+    menuMobile.classList.toggle("abierto");
+    botonMenu.classList.toggle("abierto");
+});
 
 
 // PASO 1: Seleccionar elementos
@@ -63,10 +70,3 @@ function calcularTotal() {
 }
 
 
-var botonMenu = document.getElementById("botonMenu");
-var menuMobile = document.getElementById("menuMobile");
-
-botonMenu.addEventListener("click", function (){
-    menuMobile.classList.toggle("abierto");
-    botonMenu.classList.toggle("abierto");
-});

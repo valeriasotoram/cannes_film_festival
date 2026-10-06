@@ -137,6 +137,7 @@ p {
     font-size: 30px;
     color: white;
     z-index: 10000;
+    position: relative;
 }
 
 .hamb .fa-xmark {
@@ -145,6 +146,17 @@ p {
     padding: 20px;
 }
 
+.nav-mobile.abierto{
+    max-height: 100%;
+}
+
+.hamb.abierto .fa-bars{
+    display: none;
+}
+
+.hamb.abierto .fa-xmark{
+    display: block;
+}
 
 /* 1) FESTIVAL */
 /* CarruselL*/
