@@ -585,90 +585,120 @@ footer {
     margin-top: 7vw;
     margin-bottom: 10vw;
     margin-left: 8.75vw;
+    width: 82%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
 }
+
 
 .award {
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 12vw;
+    width: 72%;
+    margin: 0 auto 4vw auto;
+    display: block;
 }
+
 
 .award .room-content {
-    display: contents;
-}
+    width: 100%;
+    min-height: 38vw;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
 
-.award .room-top{
-    width: 7vw;
-    padding: 0;
     background-color: black;
     color: white;
-    border-radius: 2.5vw 0 0 3vw;
-    align-self: stretch;
+    border-radius: 3vw;
+    padding: 3vw;
+
+    box-sizing: border-box;
 }
 
-.award .room-top h1{
+
+.award .room-top {
+    width: 10%;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.award .room-top h1 {
     margin: 0;
     width: auto;
-    font-size: 6vw;
+    font-size: 5vw;
+    font-weight: 300;
     white-space: nowrap;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+    color: #fefefe;
 }
 
 .award .room-design {
-    width: 37vw;
-    margin-left: 0;
-    padding: 8vw 5vw 8vw 0;   
-    background-color: black;
-    border-radius: 0 4vw 4vw 0;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
 }
 
 .award .room-design img {
-    aspect-ratio: 5 /6 ;
-    border-radius: 2vw;
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+    border: 1px solid white;
+    border-radius: 1vw;
+    display: block;
 }
 
+
 .award .room-text {
-    width: 36vw;
-    margin: 0 0 0 2.5vw;
-    padding: 3.5vw;
-    background-color: black;
+    width: 40%;
+    margin: 0;
+    padding: 1vw;
+    background-color: transparent;
     color: white;
-    border-radius: 4vw;
+    border-radius: 0;
 }
 
 .award .room-text h2 {
     font-size: 2vw;
-    margin-bottom: 1.2vw;
+    margin-bottom: 1.5vw;
 }
 
 .award .room-text p {
-    font-size: 1.25vw;
+    font-size: 0.9vw;
     line-height: 1.5;
     white-space: normal;
     margin-top: 0;
 }
 
-.award.reverse .room-text{
+
+
+.award.reverse .room-text {
     order: 1;
-    margin: 0 2.5vw 0 0;
+    margin: 0;
     text-align: right;
 }
 
-.award.reverse .room-design{
+.award.reverse .room-design {
     order: 2;
-    padding: 8vw 0 8vw 5vw;
-    border-radius: 4vw 0 0 4vw;
-}
-.award.reverse .room-top {
-    order: 3;
-    border-radius: 0 4vw 4vw 0;
+    padding: 0;
+    border-radius: 0;
 }
 
-.award.reverse .room-top h1{
+.award.reverse .room-top {
+    order: 3;
+}
+
+.award.reverse .room-top h1 {
     transform: none;
 }
+
+
+
 
 
 /* 3) TICKETS */
