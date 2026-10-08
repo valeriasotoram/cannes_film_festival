@@ -1,10 +1,28 @@
 var botonMenu = document.getElementById("botonMenu");
 var menuMobile = document.querySelector(".nav-mobile");
 
-botonMenu.addEventListener("click", function (){
-    menuMobile.classList.toggle("abierto");
-    botonMenu.classList.toggle("abierto");
-});
+function cerrarMenu(){
+    menuMobile.classList.remove("abierto");
+    botonMenu.classList.remove("abierto");
+    document.body.style.overflow = "";
+}
+
+if(botonMenu && menuMobile){
+    botonMenu.addEventListener("click", function (){
+        menuMobile.classList.toggle("abierto");
+        botonMenu.classList.toggle("abierto");
+
+        if(menuMobile.classList.contains("abierto")){
+            document.body.style.overflow = "hidden";
+        } else{
+            document.body.style.overflow = "";
+        }
+    });
+
+
+
+}
+
 
 
 // PASO 1: Seleccionar elementos
