@@ -70,3 +70,53 @@ function calcularTotal() {
 }
 
 
+// PASO 6: Seleccionar elementos de la compra
+
+var modalBuy = document.getElementById("modalBuy");
+
+var nameInput = document.getElementById("nameInput");
+var emailInput = document.getElementById("emailInput");
+
+var purchaseMessage = document.getElementById("purchaseMessage");
+
+var ticketModal = document.getElementById("ticketModal");
+var modalClose = document.getElementById("modalClose");
+
+var confirmationEmail = document.getElementById("confirmationEmail");
+
+
+// PASO 7: Comprobar los datos al comprar
+
+modalBuy.addEventListener("click", function () {
+
+    var name = nameInput.value.trim();
+    var email = emailInput.value.trim();
+
+    // Si los campos están vacíos
+
+    if (name === "" || email === "") {
+
+        purchaseMessage.textContent = "PLEASE FILL IN YOUR DETAILS.";
+        purchaseMessage.style.color = "#f05a3c";
+
+        return;
+    }
+
+    // Si los campos están rellenados
+
+    purchaseMessage.textContent = "";
+
+    confirmationEmail.textContent = email;
+
+    ticketModal.classList.add("active");
+
+});
+
+
+// PASO 8: Cerrar la ventana de confirmación
+
+modalClose.addEventListener("click", function () {
+
+    ticketModal.classList.remove("active");
+
+});
