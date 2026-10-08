@@ -65,29 +65,49 @@
                 <div>
                     <div>
                         <div>
-                            <label>Senior.</label>
+                            <label>Senior</label>
                             <label>Ages 65+</label>
                         </div>
-                        <input type="number" min="0" max="50" value="0" id="cant-senior" data-precio="70">
+                        <input type="number" min="0" max="10" value="0" id="cant-senior" data-precio="70">
+                        <p class="precio-grande">$70</p>
+
                     </div>
                     <div>
                         <div>
-                            <label>Adult.</label>
+                            <label>Adult</label>
                             <label>Ages 18-64</label>
                         </div>
-                        <input type="number" min="0" max="50" value="0" id="cant-adult" data-precio="150">
+                        <input type="number" min="0" max="10" value="0" id="cant-adult" data-precio="150">
+                        <p class="precio-grande">$150</p>
                     </div>
                     <div>
                         <div>
-                            <label>Students.</label>
+                            <label>Students</label>
                             <label>Ages 18-25</label>
                         </div>
-                        <input type="number" min="0" max="50" value="0" id="cant-student" data-precio="75">
+                        <input type="number" min="0" max="10" value="0" id="cant-student" data-precio="100">
+                        <p class="precio-grande">$100</p>
+
                     </div>
                    
                 </div>
             </div>
        </section>
+
+        
+        <section class="datos-comprador">
+
+            <div class="campo">
+                <label for="nombre">FULL NAME</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">EMAIL ADDRESS</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+        </section>
        
      <section class="saldo">
          <div>
@@ -96,15 +116,15 @@
              <div>
                 <div>
                     <div>
-                        <p>Senior.</p>
+                        <p>Senior</p>
                         <p id="precio-senior">$0.00</p>
                     </div>
                     <div>
-                        <p>Adult.</p>
+                        <p>Adult</p>
                         <p id="precio-adult">$0.00</p>
                     </div>
                     <div>
-                        <p>Student.</p>
+                        <p>Student</p>
                         <p id="precio-student">$0.00</p>
                     </div>
                 </div>
