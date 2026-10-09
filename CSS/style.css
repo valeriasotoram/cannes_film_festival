@@ -1432,19 +1432,116 @@ footer > :last-child > ul li a {
     
     .tabla {
         width: 85%;
+        margin: 50px auto 70px;
     }
-    
+
+    .tabla > div > div:first-child {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
     .tabla h1{
         font-size: 3.2rem;
         line-height: 1;
         margin-top: 40px;
+        margin-bottom: 10px;
+    }
 
+    .tabla > div > div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3%;
+        width: 100%;
     }
 
     .saldo{
         width: 85%;
         padding: 40px 50px;
     }
+
+    .tabla > div > div:nth-child(2) > div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 31.3%;
+        min-height: 210px;
+        padding: 20px 15px;
+        margin: 0;
+        border: 1px solid black;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+
+    .tabla > div > div:nth-child(2) > div > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .tabla label:first-child {
+        font-size: 1rem;
+    }
+
+    .tabla label:last-child {
+        font-size: 0.65rem;
+    }
+
+
+    .tabla .precio-grande {
+        font-size: 4.5rem;
+        line-height: 1;
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+
+
+    .tabla input[type="number"] {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        bottom: auto;
+        transform: none;
+
+        width: 65px;
+        height: 30px;
+        padding: 3px;
+        font-size: 0.8rem;
+        box-sizing: border-box;
+    }
+
+
+    .datos-comprador {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 25px;
+
+        width: 80%;
+        margin: 0 auto 90px;
+    }
+
+    .datos-comprador .campo {
+        width: 50%;
+        padding: 25px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .datos-comprador .campo label {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 0.85rem;
+    }
+
+    .datos-comprador .campo input {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
 
     /* Footer */
 
