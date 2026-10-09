@@ -101,18 +101,6 @@ p {
     color: #ff9ee2;
 }
 
-/* Modo Oscuro/Claro */
-
-body.dark-mode {
-    --cream: #111111;
-    --black: #F3F0E8
-}
-
-body.dark-mode .mood-buttons button {
-    color: #F3F0E8;
-    border-color: #F3F0E8;
-}
-
 /*Menú Tablet & Móvil*/
 .nav-mobile {
     width: 100%;
