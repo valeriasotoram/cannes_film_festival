@@ -320,8 +320,9 @@ footer {
 }
 
 .room-design {
-    width: 32%;
-    margin-left: 6.5%;
+    width: 40%;
+    margin-left: 2%;
+    margin-top: -4vw;
 }
 
 .room-design img {
@@ -348,21 +349,24 @@ footer {
 
 .boton {
     width: 100%;
-    padding-left: 52%;            
-    margin-top: -14.8vw;           
+    padding-left: 54.5%;            
+    margin-top: -16.8vw;           
 }
 
 .boton > * {
     display: inline-block;
-    padding: 10px 19px;
-    border-radius: 30px;
-    background-color: #ffb0ef;
+    padding: 10px 15px;
+    background-color: #fefefe;
     color: black;
     font-family: "Elms Sans", sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
+}
+
+.boton > *:hover {
+    background-color: #ff9ee2;
 }
 
 
@@ -398,19 +402,22 @@ footer {
 
 .selected-top {
     width: 100%;
+    display: flex;
     justify-content: flex-start;
     padding: 4vw 4vw 0 4vw;
 }
 
-.selected-top h1 {
-    white-space: nowrap;
-}
-
 .room-top h1{
     margin-top: 50px;
-    font-size: 100px;
-    width: 50%;
-    
+    font-size: 80px;
+    width: 50%; 
+}
+
+.selected-top h1 {
+    white-space: nowrap;
+    width: 130%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 5px;
 }
 
 
@@ -428,6 +435,7 @@ footer {
     font-size: 6rem;
     font-weight: 400;
     margin-bottom: 4vw;
+    
 }
 
 .jury-title {
@@ -577,90 +585,120 @@ footer {
     margin-top: 7vw;
     margin-bottom: 10vw;
     margin-left: 8.75vw;
+    width: 82%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
 }
+
 
 .award {
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 12vw;
+    width: 72%;
+    margin: 0 auto 4vw auto;
+    display: block;
 }
+
 
 .award .room-content {
-    display: contents;
-}
+    width: 100%;
+    min-height: 38vw;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
 
-.award .room-top{
-    width: 7vw;
-    padding: 0;
     background-color: black;
     color: white;
-    border-radius: 2.5vw 0 0 3vw;
-    align-self: stretch;
+    border-radius: 3vw;
+    padding: 3vw;
+
+    box-sizing: border-box;
 }
 
-.award .room-top h1{
+
+.award .room-top {
+    width: 10%;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.award .room-top h1 {
     margin: 0;
     width: auto;
-    font-size: 6vw;
+    font-size: 5vw;
+    font-weight: 300;
     white-space: nowrap;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+    color: #fefefe;
 }
 
 .award .room-design {
-    width: 37vw;
-    margin-left: 0;
-    padding: 8vw 5vw 8vw 0;   
-    background-color: black;
-    border-radius: 0 4vw 4vw 0;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
 }
 
 .award .room-design img {
-    aspect-ratio: 5 /6 ;
-    border-radius: 2vw;
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+    border: 1px solid white;
+    border-radius: 1vw;
+    display: block;
 }
 
+
 .award .room-text {
-    width: 36vw;
-    margin: 0 0 0 2.5vw;
-    padding: 3.5vw;
-    background-color: black;
+    width: 40%;
+    margin: 0;
+    padding: 1vw;
+    background-color: transparent;
     color: white;
-    border-radius: 4vw;
+    border-radius: 0;
 }
 
 .award .room-text h2 {
     font-size: 2vw;
-    margin-bottom: 1.2vw;
+    margin-bottom: 1.5vw;
 }
 
 .award .room-text p {
-    font-size: 1.25vw;
+    font-size: 0.9vw;
     line-height: 1.5;
     white-space: normal;
     margin-top: 0;
 }
 
-.award.reverse .room-text{
+
+
+.award.reverse .room-text {
     order: 1;
-    margin: 0 2.5vw 0 0;
+    margin: 0;
     text-align: right;
 }
 
-.award.reverse .room-design{
+.award.reverse .room-design {
     order: 2;
-    padding: 8vw 0 8vw 5vw;
-    border-radius: 4vw 0 0 4vw;
-}
-.award.reverse .room-top {
-    order: 3;
-    border-radius: 0 4vw 4vw 0;
+    padding: 0;
+    border-radius: 0;
 }
 
-.award.reverse .room-top h1{
+.award.reverse .room-top {
+    order: 3;
+}
+
+.award.reverse .room-top h1 {
     transform: none;
 }
+
+
+
 
 
 /* 3) TICKETS */
@@ -687,21 +725,46 @@ footer {
     margin-bottom: 8px;
 }
 
+.tabla > div > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 
 .tabla > div > div:nth-child(2) > div {
-    width: 100%;
+    width: 28%;
+    height: 200px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     border: 1px solid black;
-    border-radius: 30px;
-    padding: 12px 20px;
+    border-radius: 0;
+    padding: 20px;
     margin-bottom: 15px;
+}
+
+.tabla > div > div:nth-child(2) > div {
+    position: relative;
+}
+
+.tabla input[type="number"] {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .tabla h1 {
     font-size: 80px;
     margin-top: 80px;
+}
+
+.tabla .precio-grande {
+    font-family: "Imbue", serif;
+    font-size: 65px;
+    line-height: 1;
+    margin: 0;
 }
 
 
@@ -723,6 +786,41 @@ footer {
 }
 
 
+/* Datos Comprador */
+
+.datos-comprador {
+    width: 45%;
+    margin: 0 auto 100px auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.campo {
+    width: 50%;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.campo label {
+    display: block;
+    font-family: "Elms Sans", sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.campo input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 10px;
+    font-family: "Elms Sans", sans-serif;
+    font-size: 1rem;
+}
+
+
 /* Contador */
 
 .tabla input[type="number"] {
@@ -730,7 +828,7 @@ footer {
     background-color: white;
     color: black;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 0;
     padding: 7px;
     text-align: center;
 }
@@ -798,15 +896,19 @@ footer {
     padding: 30px 0 0 0;
 }
 
-.saldo input[type="submit"] {
-    background-color: #ff9ee2;
+.saldo input[type="button"] {
+    background-color: #ffffff;
     color: black;
     border: none;
-    border-radius: 30px;
+    border-radius: 0;
     padding: 10px 30px;
     font-family: "Elms Sans", sans-serif;
     font-weight: 600;
     cursor: pointer;
+}
+
+.saldo input[type="button"]:hover {
+    background-color: #ff9ee2;
 }
 
 
@@ -947,7 +1049,7 @@ footer > :nth-child(3) > div:last-child ul {
 footer > :last-child {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #444;
+    border-top: 1px solid #ffffff;
     padding-top: 1.5vw;
 }
 
@@ -964,7 +1066,87 @@ footer > :last-child > ul li a {
 }
 
 
+/* VENTANA DE CONFIRMACIÓN */
 
+.ticket-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-modal.active {
+    display: flex;
+}
+
+.ticket-modal .modal-content h2 {
+    font-family: "Imbue", serif;
+    font-size: 70px;
+    font-weight: 400;
+    width: 75%;
+    margin: 30px auto;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.ticket-modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
+    width: 55%;
+    padding: 60px;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-small {
+    font-family: "Imbue", serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0 auto 3vw;
+    padding-bottom: 1.5vw;
+}
+
+.modal-content p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#purchaseMessage {
+    color: #f05a3c;
+    margin-top: 15px;
+}
+
+#confirmationEmail {
+    font-family: "Imbue", serif;
+    font-size: 3vw;
+    color: #ff9ee2;
+    margin-top: 1vw;
+}
 
 
 
@@ -976,7 +1158,7 @@ footer > :last-child > ul li a {
 
 @media (max-width: 720px) {
 
-    /* Hero */
+    /* Hero y Menú*/
     .titulo-hero {
         font-size: 5rem;
     }
@@ -1130,21 +1312,14 @@ footer > :last-child > ul li a {
         white-space: nowrap;
     }
 
+    /*Awards*/
+
     .jury + h1,
     .awards-title {
         font-size: 3.2rem;
         line-height: 1;
         margin: 0 0 3vw 4vw;
     }
- 
-    /* .awards {
-        padding: 8vw 5vw;
-    }
- 
-    .awards h1 {
-        font-size: 4rem;
-        margin-bottom: 6vw;
-    } */
  
     .room-block.award {
         width: 92%;
@@ -1157,39 +1332,64 @@ footer > :last-child > ul li a {
         gap: 0;
         background-color: transparent;
     }
+
+    .room-block.award .room-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 3vw;
+        gap: 2vw;
+        background-color: black;
+        border-radius: 4vw;
+        box-sizing: border-box;
+    }
  
     .room-block.award .room-top {
-        width: 8vw;
+        width: 12%;
         padding: 0;
-        border-radius: 4vw 0 0 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
     }
  
     .room-block.award .room-top h1 {
         font-size: 5.5vw;
         margin: 0;
         width: auto;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        white-space: nowrap;
     }
  
     .room-block.award .room-design {
-        width: 34vw;
+        width: 38%;
+        flex-shrink: 0;
+        padding: 0;
         margin: 0;
-        padding: 5vw 4vw 5vw 0;
-        border-radius: 0 4vw 4vw 0;
-        align-self: stretch;
         display: flex;
         align-items: center;
+        background-color: transparent;
     }
  
     .room-block.award .room-design img {
+        display: block;
         width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
         border-radius: 2.5vw;
     }
  
     .room-block.award .room-text {
-        width: 46vw;
-        margin: 0 0 0 2vw;
-        padding: 3vw;
-        border-radius: 4vw;
+        flex: 1;
+        min-width: 0;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        text-align: left;
     }
  
     .room-block.award .room-text h2 {
@@ -1198,71 +1398,160 @@ footer > :last-child > ul li a {
     }
  
     .room-block.award .room-text p {
-        font-size: clamp(0.68rem, 1.9vw, 0.9rem);
+        font-size: 1.5vw;
         line-height: 1.4;
+        margin: 0;
     }
  
-    .room-block.award.reverse {
+    .room-block.award.reverse .room-content {
+        display: flex;
         flex-direction: row;
+        align-items: center;
     }
  
+
     .room-block.award.reverse .room-top {
-        border-radius: 0 4vw 4vw 0;
+        width: 12%;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
     }
- 
+
+    .room-block.award.reverse .room-top h1 {
+        transform: none;
+    }
+
     .room-block.award.reverse .room-design {
-        padding: 5vw 0 5vw 4vw;
-        border-radius: 4vw 0 0 4vw;
+        width: 38%;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
     }
- 
+
     .room-block.award.reverse .room-text {
-        margin: 0 2vw 0 0;
+        flex: 1;
+        min-width: 0;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        text-align: right;
     }
  
-    /* .award-image {
-        width: 52%;
-    }
- 
-    .award-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
- 
-    .award-text {
-        width: 42%;
-        padding: 4vw;
-        box-sizing: border-box;
-    }
- 
-    .award-text h2 {
-        font-size: 1.5rem;
-        margin-bottom: 2vw;
-    }
- 
-    .award-text p {
-        font-size: 0.85rem;
-        line-height: 1.4;
-    }
-  */
 
     /* Tickets */
     
     .tabla {
         width: 85%;
+        margin: 50px auto 70px;
     }
-    
+
+    .tabla > div > div:first-child {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
     .tabla h1{
         font-size: 3.2rem;
         line-height: 1;
         margin-top: 40px;
+        margin-bottom: 10px;
+    }
 
+    .tabla > div > div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3%;
+        width: 100%;
     }
 
     .saldo{
         width: 85%;
         padding: 40px 50px;
     }
+
+    .tabla > div > div:nth-child(2) > div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 31.3%;
+        min-height: 210px;
+        padding: 20px 15px;
+        margin: 0;
+        border: 1px solid black;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+
+    .tabla > div > div:nth-child(2) > div > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .tabla label:first-child {
+        font-size: 1rem;
+    }
+
+    .tabla label:last-child {
+        font-size: 0.65rem;
+    }
+
+
+    .tabla .precio-grande {
+        font-size: 4.5rem;
+        line-height: 1;
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+
+
+    .tabla input[type="number"] {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        bottom: auto;
+        transform: none;
+
+        width: 65px;
+        height: 30px;
+        padding: 3px;
+        font-size: 0.8rem;
+        box-sizing: border-box;
+    }
+
+
+    .datos-comprador {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 25px;
+
+        width: 80%;
+        margin: 0 auto 90px;
+    }
+
+    .datos-comprador .campo {
+        width: 50%;
+        padding: 25px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .datos-comprador .campo label {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 0.85rem;
+    }
+
+    .datos-comprador .campo input {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
 
     /* Footer */
 
@@ -1614,30 +1903,33 @@ footer > :last-child > ul li a {
     .jury + h1,
     .awards-title{
         font-size: 2.7rem;
-        margin: 0 0 4vw 5.5vw;
+        margin: 0 0 6vw 5.5vw;
     }
 
-
-     .room-block.award,
-     .room-block.award.reverse { 
+     
+    .room-block.award,
+    .room-block.award.reverse { 
         width: 89%;
-        margin: 0 auto 24vw auto;
+        margin: 0 auto 20vw;
         padding: 0;
-        display: grid;
+        display: block;
         background-color: transparent;
-        grid-template-columns: 28% 72%;
-        grid-template-rows: auto auto;
-        row-gap: 2vw;
-        column-gap: 0;
-        align-items: stretch;
-        justify-content: start;
     }
 
     .room-block.award .room-content {
-        display: contents;
+        display: grid;
+        grid-template-columns: 28% 72%;
+        grid-template-rows: auto auto;
+        width: 100%;
+        padding: 12vw 6vw;
+        margin: 0;
+        gap: 0;
+        background-color: black;
+        border-radius: 8vw;
+        box-sizing: border-box;;
     }
 
-    .room-block.award.reverse{
+    .room-block.award.reverse .room-content {
         grid-template-columns: 72% 28%;
     }
 
@@ -1647,12 +1939,11 @@ footer > :last-child > ul li a {
         width: 100%;
         padding: 0;
         min-height: 0;
-        border-radius: 8vw 0 0 8vw;
+        border-radius: 0;
         display: flex;
         justify-content: center;
-        background-color: black;
+        background-color: transparent;
         align-items: center;
-        align-self: stretch;
     }
 
     .room-block.award .room-top h1 {
@@ -1668,12 +1959,12 @@ footer > :last-child > ul li a {
     .room-block.award .room-design {
         width: 100%;
         margin: 0;
-        padding: 12.7vw 6vw 12.7vw 0;
+        padding: 0;
         border-radius: 0 8vw 8vw 0;
         grid-column: 2;
         grid-row: 1;
         display: block;
-        background-color: black;
+        background-color: transparent;
     }
 
 
@@ -1688,13 +1979,14 @@ footer > :last-child > ul li a {
 
 
     .room-block.award .room-text {
-        grid-column: 1 / 3;
+        grid-column: 2;
         grid-row: 2;
         width: 100%;
         margin: 0;
-        padding: 12vw 10vw;
+        padding: 10vw 0 0;
         border-radius: 8vw;
         text-align: left;
+        background-color: transparent;
     }
 
     .room-block.award .room-text h2 {
@@ -1706,12 +1998,13 @@ footer > :last-child > ul li a {
     .room-block.award .room-text p {
         font-size: 0.8rem;
         line-height: 1.4;
+        margin: 0;
     } 
 
     .room-block.award.reverse .room-top {
         grid-column: 2;
         grid-row: 1;
-        border-radius: 0 8vw 8vw 0;
+        padding: 0;
     }
  
     .room-block.award.reverse .room-top h1 {
@@ -1719,8 +2012,7 @@ footer > :last-child > ul li a {
     }
  
     .room-block.award.reverse .room-design {
-        padding: 12.7vw 0 12.7vw 6vw;
-        border-radius: 8vw 0 0 8vw;
+        padding: 0;
         grid-column: 1;
         grid-row: 1;
     }
@@ -1728,19 +2020,29 @@ footer > :last-child > ul li a {
     .room-block.award.reverse .room-text {
         margin: 0;
         text-align: left;
-        grid-column: 1 / 3;
+        grid-column: 1;
         grid-row: 2;
+        padding: 10vw 0 0;
+        width: 100%;
     }
 
 
     /* 3) TICKETS */
 
     .tabla{
+        display: block;
         width: 91%;
         margin: 40px auto 50px auto;
     }
 
+    .tabla > div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .tabla > div > div:first-child{
+        width: 100%;
         padding-left: 3vw;
         margin-bottom: 8vw;
     }
@@ -1748,8 +2050,8 @@ footer > :last-child > ul li a {
     .tabla > div > div:first-child h1 {
         font-size: 12vw;
         line-height: 1.05;
-        margin-top: 12vw;
-        margin-bottom: 4vw;
+        margin: 12vw 0 4vw;
+
     }
 
     .tabla > div > div:first-child p {
@@ -1757,10 +2059,30 @@ footer > :last-child > ul li a {
         line-height: 1.3;
     }
 
-    .tabla > div > div:first-child(2) > div{
-        padding: 12vw 5vw 12vw 7vw;
-        border-radius: 45px;
-        margin-bottom: 14px;
+    .tabla > div > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 4vw;
+    }
+
+    .tabla > div > div:nth-child(2) > div {        
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 150px;
+        padding: 7vw;
+        margin: 0;
+        border: 1px solid black;
+        border-radius: 0;
+    }
+
+
+    .tabla > div > div:nth-child(2) > div > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .tabla label:first-child{
@@ -1771,27 +2093,62 @@ footer > :last-child > ul li a {
         font-size: 0.6rem;
     }
 
-    .tabla input[type="number"]{
-        width: 64px;
-        padding: 3px;
-        font-size: 0.8rem;
+    .tabla .precio-grande {
+        font-size: 15vw;
+        line-height: 1;
+        margin-top: 5vw;
     }
 
-    .saldo {
+    .tabla input[type="number"]{
+        position: absolute;
+        right: 7vw;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 64px;
+        height: 30px;
+        padding: 4px;
+        font-size: 0.8rem;
+        box-sizing: border-box;
+
+    }
+
+    .datos-comprador {
+        display: flex;
+        flex-direction: column;
+        width: 91%;
+        margin: 0 auto 8vw;
+        gap: 4vw;
+    }
+
+    .datos-comprador .campo {
         width: 100%;
-        margin: 0;
-        padding: 12vw 8vw 10vw;
+    }
+
+    .datos-comprador input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .saldo {
+        display: block;
+        width: 90%;
         max-width: none;
-        margin-bottom: 12vw;
-        border-radius: 30px;
+        margin: 0 auto 12vw auto;
+        padding: 10vw 7vw;
+        border-radius: 0;
+        box-sizing: border-box;
+
     }
  
     .saldo > div:first-child {
-        padding: 0 0 8vw 0;
+        padding: 0 0 8vw;
     }
  
     .saldo > div:nth-child(2) > div > div {
-        padding: 8px 6vw;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
     }
  
     .saldo > div:nth-child(3) p {
@@ -1799,6 +2156,39 @@ footer > :last-child > ul li a {
         font-size: 1rem;
         justify-content: space-between;
     }
+
+    /* Ventana de confirmación */
+
+    .modal-content {
+        width: 85%;
+        padding: 35px 20px;
+    }
+
+    .ticket-modal .modal-content h2 {
+        width: 85%;
+        font-size: 42px;
+        margin: 15px auto;
+        padding-bottom: 10px;
+    }
+
+    .modal-content p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    #confirmationEmail {
+        font-size: 22px;
+        margin-top: 12px;
+    }
+
+    .modal-close {
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+    }
+
+
+
     
     /*Footer*/
     footer {
